@@ -5,3 +5,7 @@
 <ToggleContent @title="Performing a @task in the constructor" @subtitle="This works in Ember 3.21, errors in 3.22">
   <Example2 />
 </ToggleContent>
+
+<ToggleContent @title="Calling `addFragment` in the constructor" @subtitle="This is an anti-pattern which used to work in 3.21, errors in 3.22">
+  <PersonCard @person={{@model}} />
+</ToggleContent>
