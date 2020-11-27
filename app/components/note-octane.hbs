@@ -1,0 +1,10 @@
+[isFocused: {{this.isFocused}}, isDisabled: {{this.isDisabled}}]
+<br>
+<Textarea
+  {{on "keydown" this.onKeyDown}}
+  {{on "focus" this.onFocus}}
+  {{on "blur" this.onBlur}}
+  @disabled={{this.isDisabled}}
+  class="bg-yellow-200"
+  placeholder="type something then press enter"
+/>
